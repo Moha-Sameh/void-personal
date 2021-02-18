@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Button from "./styling/Button";
+import Input from "./styling/Input";
+import List from "./component/List";
+import { Lamaana } from "./styling/styles";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Welcome to Void Gameshop</h1>
+      <div>
+        <ul>
+          <li>
+            <Input />
+          </li>
+          <la>
+            <Input />
+          </la>
+          <la>
+            <Button>Name</Button>
+          </la>
+          <la>
+            <Button>Home</Button>
+          </la>
+        </ul>
+      </div>
+      <ul>
+        <Lamaana>
+          <List />
+        </Lamaana>
+      </ul>
     </div>
   );
-}
+};
 
 export default App;
